@@ -1,0 +1,48 @@
+<style>
+     :host {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 14px;
+        color: #333;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 8px 0;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    .toolbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .toolbar img {
+        margin: 0 16px;
+    }
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner" [style.backgroundColor]="headerBackgroundColor">
+    <img width="40" alt="Angular Logo" src=" data:image/png;base64,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"
+    />
+    <b>Monitoring App</b>
+    <div class="spacer"></div>
+    <app-nav></app-nav>
+</div>

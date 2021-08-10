@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'monitor-app';
+  title = 'Monitor APP';
+
+  public static pages = [
+    {
+      url: "/dashboard",
+      title: "Dashboard"
+    },
+    {
+      url: "/info",
+      title: "Systeminfo"
+    }
+  ]
 }

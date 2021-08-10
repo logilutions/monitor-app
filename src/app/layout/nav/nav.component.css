@@ -1,0 +1,17 @@
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:active {
+    text-decoration: underline;
+}
+
+nav li a:hover {
+    color: rgb(230, 230, 230);
+}

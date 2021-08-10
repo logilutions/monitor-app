@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  headerBackgroundColor: "rgb(0, 73, 126)"
 };
